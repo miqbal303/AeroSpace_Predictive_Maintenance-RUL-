@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/abce01c6839b4ddba2405060d53313f6/artifacts
+end_time: 1695527548032
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: abce01c6839b4ddba2405060d53313f6
+run_name: adorable-pig-298
+run_uuid: abce01c6839b4ddba2405060d53313f6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695527535741
+status: 3
+tags: []
+user_id: miqba

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/707187812826453788/690dc065a2ba47a18ff98a0f980657e2/artifacts
+end_time: 1695541880118
+entry_point_name: ''
+experiment_id: '707187812826453788'
+lifecycle_stage: active
+run_id: 690dc065a2ba47a18ff98a0f980657e2
+run_name: fortunate-fawn-679
+run_uuid: 690dc065a2ba47a18ff98a0f980657e2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695540437729
+status: 3
+tags: []
+user_id: miqba

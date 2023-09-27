@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/1ed2ba9f09e649eab243aa6c779e1c75/artifacts
+end_time: 1695541880118
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: 1ed2ba9f09e649eab243aa6c779e1c75
+run_name: loud-bee-708
+run_uuid: 1ed2ba9f09e649eab243aa6c779e1c75
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695540427581
+status: 4
+tags: []
+user_id: miqba

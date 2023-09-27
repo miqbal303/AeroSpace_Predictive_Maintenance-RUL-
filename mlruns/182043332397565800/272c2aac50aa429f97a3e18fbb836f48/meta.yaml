@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/272c2aac50aa429f97a3e18fbb836f48/artifacts
+end_time: 1695526955265
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: 272c2aac50aa429f97a3e18fbb836f48
+run_name: languid-grub-188
+run_uuid: 272c2aac50aa429f97a3e18fbb836f48
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695526954874
+status: 3
+tags: []
+user_id: miqba

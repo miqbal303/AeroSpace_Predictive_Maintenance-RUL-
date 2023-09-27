@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/707187812826453788/bfc8eb60c4404b74830c0e5b21de7e02/artifacts
+end_time: 1695532101128
+entry_point_name: ''
+experiment_id: '707187812826453788'
+lifecycle_stage: active
+run_id: bfc8eb60c4404b74830c0e5b21de7e02
+run_name: powerful-trout-39
+run_uuid: bfc8eb60c4404b74830c0e5b21de7e02
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695529916882
+status: 3
+tags: []
+user_id: miqba

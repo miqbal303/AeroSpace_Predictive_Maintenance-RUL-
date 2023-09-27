@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/ce43149849cf447dad71031d12d0dbde/artifacts
+end_time: 1695527476338
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: ce43149849cf447dad71031d12d0dbde
+run_name: efficient-colt-15
+run_uuid: ce43149849cf447dad71031d12d0dbde
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695527476060
+status: 3
+tags: []
+user_id: miqba

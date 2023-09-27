@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/a622c96718984cf3b17fbc1feaa7079a/artifacts
+end_time: 1695535085106
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: a622c96718984cf3b17fbc1feaa7079a
+run_name: fun-shoat-200
+run_uuid: a622c96718984cf3b17fbc1feaa7079a
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695535084933
+status: 3
+tags: []
+user_id: miqba

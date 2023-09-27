@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/51f93b1c4fac45909dbe56470b065ed0/artifacts
+end_time: 1695532229074
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: 51f93b1c4fac45909dbe56470b065ed0
+run_name: receptive-lark-962
+run_uuid: 51f93b1c4fac45909dbe56470b065ed0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695532217502
+status: 4
+tags: []
+user_id: miqba

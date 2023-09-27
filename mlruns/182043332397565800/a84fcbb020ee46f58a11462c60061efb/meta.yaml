@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/a84fcbb020ee46f58a11462c60061efb/artifacts
+end_time: 1695526955281
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: a84fcbb020ee46f58a11462c60061efb
+run_name: chill-panda-817
+run_uuid: a84fcbb020ee46f58a11462c60061efb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695526944167
+status: 4
+tags: []
+user_id: miqba

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/707187812826453788/2e00341a061f46489ba59527670d4545/artifacts
+end_time: 1695536632699
+entry_point_name: ''
+experiment_id: '707187812826453788'
+lifecycle_stage: active
+run_id: 2e00341a061f46489ba59527670d4545
+run_name: thundering-goat-924
+run_uuid: 2e00341a061f46489ba59527670d4545
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695535085117
+status: 3
+tags: []
+user_id: miqba

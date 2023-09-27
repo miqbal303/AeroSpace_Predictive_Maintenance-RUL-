@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/377ce1c345ae467ca95c4ce8f3b0928b/artifacts
+end_time: 1695532229037
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: 377ce1c345ae467ca95c4ce8f3b0928b
+run_name: charming-foal-622
+run_uuid: 377ce1c345ae467ca95c4ce8f3b0928b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695532228862
+status: 3
+tags: []
+user_id: miqba

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/c5e7a262572a4c94b295e717b9cb373d/artifacts
+end_time: 1695527385554
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: c5e7a262572a4c94b295e717b9cb373d
+run_name: nosy-colt-538
+run_uuid: c5e7a262572a4c94b295e717b9cb373d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695527385283
+status: 3
+tags: []
+user_id: miqba
