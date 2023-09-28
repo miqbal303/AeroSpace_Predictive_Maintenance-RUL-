@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict Maintenance Result</title>
+    <style>
+        body {
+            text-align: center; /* Center-align the text in the body */
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* This ensures the content is centered vertically on the viewport */
+        }
+        .button {
+            margin-top: 20px; /* Add some spacing below the result */
+        }
+    </style>
+</head>
+<body>
+    <div class="center">
+        <h1>Prediction Result</h1>
+        <p>{{ final_result }}</p> <!-- This is where you should display the dynamic result -->
+        <a href="/predict" class="button">Remaining Useful Life</a>
+    </div>
+</body>
+</html>

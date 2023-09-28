@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/0/9090f1f9b88b4addb3dbba7f78ade570/artifacts
+end_time: 1695918281447
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9090f1f9b88b4addb3dbba7f78ade570
+run_name: indecisive-finch-362
+run_uuid: 9090f1f9b88b4addb3dbba7f78ade570
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695918281408
+status: 3
+tags: []
+user_id: miqba

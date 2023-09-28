@@ -7,6 +7,7 @@ from mlflow import log_params, log_metrics, log_artifact
 from src.Turbo_Engine_Predict_Maintenance.logger import logging
 from src.Turbo_Engine_Predict_Maintenance.exception import CustomException
 from src.Turbo_Engine_Predict_Maintenance.utils import load_object, save_object
+import traceback
 
 class PredictPipeline:
     def __init__(self):
@@ -18,13 +19,14 @@ class PredictPipeline:
             mlflow.set_experiment("PredictionPipeline")
 
             # Save model and preprocessor as artifacts
-            model = load_object(file_path="model.pkl")
-            preprocessor = load_object(file_path="preprocessor.pkl")
+            
 
-            model_path = "model.pkl"
-            preprocessor_path = "preprocessor.pkl"
-            save_object(model, file_path=model_path)
-            save_object(preprocessor, file_path=preprocessor_path)
+            model_path = os.path.join("artifacts", "model.pkl")
+            preprocessor_path = os.path.join('artifacts', 'preprocessor.pkl')
+            model = load_object(file_path=model_path)
+            preprocessor = load_object(file_path=preprocessor_path)
+            #save_object(model, file_path=model_path)
+            #save_object(preprocessor, file_path=preprocessor_path)
 
             data_scaled = preprocessor.transform(features)
             preds = model.predict(data_scaled)
@@ -46,7 +48,11 @@ class PredictPipeline:
             return preds
 
         except Exception as e:
-            mlflow.log_exception(e)
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             raise CustomException(e, sys)
         finally:
             mlflow.end_run()
@@ -65,10 +71,10 @@ class CustomData:
                  sensor_measurement11: float,
                  sensor_measurement12: float,
                  sensor_measurement13: float,
-                 sensor_measurement15: float,
-                 sensor_measurement17: float,
-                 sensor_measurement20: float,
-                 sensor_measurement21: float
+                 #sensor_measurement15: float,
+                 #sensor_measurement17: float,
+                 #sensor_measurement20: float,
+                 #sensor_measurement21: float
                  ):
         
         self.engine_number = engine_number
@@ -82,10 +88,10 @@ class CustomData:
         self.sensor_measurement11 = sensor_measurement11
         self.sensor_measurement12 = sensor_measurement12
         self.sensor_measurement13 = sensor_measurement13
-        self.sensor_measurement15 = sensor_measurement15
-        self.sensor_measurement17 = sensor_measurement17
-        self.sensor_measurement20 = sensor_measurement20
-        self.sensor_measurement21 = sensor_measurement21
+        #self.sensor_measurement15 = sensor_measurement15
+        #self.sensor_measurement17 = sensor_measurement17
+        #self.sensor_measurement20 = sensor_measurement20
+        #self.sensor_measurement21 = sensor_measurement21
     
     def get_data_as_data_frame(self):
         try:
@@ -104,10 +110,10 @@ class CustomData:
                      "sensor_measurement11" : [self.sensor_measurement11], 
                      "sensor_measurement12" : [self.sensor_measurement12], 
                      "sensor_measurement13" : [self.sensor_measurement13], 
-                     "sensor_measurement15" : [self.sensor_measurement15], 
-                     "sensor_measurement17" : [self.sensor_measurement17], 
-                     "sensor_measurement20" : [self.sensor_measurement20], 
-                     "sensor_measurement21" : [self.sensor_measurement21], 
+                     #"sensor_measurement15" : [self.sensor_measurement15], 
+                     #"sensor_measurement17" : [self.sensor_measurement17], 
+                     #"sensor_measurement20" : [self.sensor_measurement20], 
+                     #"sensor_measurement21" : [self.sensor_measurement21], 
                 }
 
             df = pd.DataFrame(custom_data_input_dict)
@@ -124,7 +130,11 @@ class CustomData:
             return df
 
         except Exception as e:
-            mlflow.log_exception(e)
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             raise CustomException(e, sys)
         finally:
             mlflow.end_run()

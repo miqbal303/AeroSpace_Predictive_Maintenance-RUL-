@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Remaining Useful Life</title>
+    <style>
+        /* Center the form vertically and horizontally */
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        /* Style the container with a rectangle box */
+        .container {
+            border: 2px solid #000;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #f0f0f0;
+        }
+
+        /* Style form labels and inputs */
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .row label {
+            flex-basis: 45%; /* Adjust the label width as needed */
+        }
+
+        .row input[type="number"] {
+            flex-basis: 45%; /* Adjust the input width as needed */
+            padding: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px; /* Add spacing below the form */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form method="POST" action="/predict">
+            <div class="row">
+                <label for="engine_number">Engine Number:</label>
+                <input type="number" name="engine_number" step="0.01" min="0" max="100" required>
+            </div>
+
+            <div class="row">
+                <label for="time_cycles">Time Cycles:</label>
+                <input type="number" name="time_cycles" step="0.01" min="0" max="103" required>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement2">Sensor Measurement 2:</label>
+                <input type="number" name="sensor_measurement2" step="0.01" required>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement3">Sensor Measurement 3:</label>
+                <input type="number" name="sensor_measurement3" step="0.01" required>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement4">Sensor Measurement 4:</label>
+                <input type="number" name="sensor_measurement4" step="0.01" required>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement7">Sensor Measurement 7:</label>
+                <input type="number" name="sensor_measurement7" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement8">Sensor Measurement 8:</label>
+                <input type="number" name="sensor_measurement8" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement9">Sensor Measurement 9:</label>
+                <input type="number" name="sensor_measurement9" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement11">Sensor Measurement 11:</label>
+                <input type="number" name="sensor_measurement11" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement12">Sensor Measurement 12:</label>
+                <input type="number" name="sensor_measurement12" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement13">Sensor Measurement 13:</label>
+                <input type="number" name="sensor_measurement13" step="0.01" required><br>
+            </div>
+            <!--
+            <div class="row">
+                <label for="sensor_measurement15">Sensor Measurement 15:</label>
+                <input type="number" name="sensor_measurement15" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement17">Sensor Measurement 17:</label>
+                <input type="number" name="sensor_measurement17" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement20">Sensor Measurement 20:</label>
+                <input type="number" name="sensor_measurement20" step="0.01" required><br>
+            </div>
+
+            <div class="row">
+                <label for="sensor_measurement21">Sensor Measurement 21:</label>
+                <input type="number" name="sensor_measurement21" step="0.01" required><br>
+            </div>
+            -->
+            <input type="submit" value="Submit">
+     
+        </form>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/686181032918948084/0277f86eb07d473381a8b492dd4489e6/artifacts
+end_time: 1695919133732
+entry_point_name: ''
+experiment_id: '686181032918948084'
+lifecycle_stage: active
+run_id: 0277f86eb07d473381a8b492dd4489e6
+run_name: capricious-finch-319
+run_uuid: 0277f86eb07d473381a8b492dd4489e6
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695919133671
+status: 3
+tags: []
+user_id: miqba

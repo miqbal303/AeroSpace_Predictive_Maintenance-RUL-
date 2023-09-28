@@ -1,0 +1,4 @@
+Traceback (most recent call last):
+  File "D:\End To End ML\End_To_End_Intership\Predict_Maintenance_Nasa_TubroEngine_withmlflow\src\Turbo_Engine_Predict_Maintenance\pipelines\prediction_pipeline.py", line 28, in predict
+    save_object(model, file_path=model_path)
+TypeError: save_object() got multiple values for argument 'file_path'

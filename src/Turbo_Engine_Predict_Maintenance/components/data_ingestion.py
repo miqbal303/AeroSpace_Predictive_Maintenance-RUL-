@@ -8,7 +8,7 @@ import logging  # Import the logging module
 from src.Turbo_Engine_Predict_Maintenance.exception import CustomException
 from src.config import MONGODB_URI, DB_NAME, COLLECTION_NAMES
 from src.Turbo_Engine_Predict_Maintenance.utils import connect_to_mongodb, fetch_data_from_mongodb, remove_id_field
-
+import traceback
 # Configure the logging module
 logging.basicConfig(filename='data_ingestion.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -38,9 +38,14 @@ class DataIngestion:
             print("Connected to MongoDB!")
             logging.info("Succesfully Connected to MongoDB!")
         except Exception as e:
-            mlflow.log_exception(e)
+            # Log the exception message and stack trace as parameters
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             logging.error("Exception while connecting to MongoDB: %s", str(e))  # Log the error
-            raise e
+            raise CustomException(e)
 
     def fetch_data_from_mongodb(self, collection_name):
         try:
@@ -54,9 +59,14 @@ class DataIngestion:
             df = pd.DataFrame(all_documents)
             return df
         except Exception as e:
-            mlflow.log_exception(e)
+            # Log the exception message and stack trace as parameters
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             logging.error("Exception while fetching data from MongoDB: %s", str(e))  # Log the error
-            raise e
+            raise CustomException(e)
 
     def save_data_to_csv(self, df, file_path):
         try:
@@ -66,9 +76,14 @@ class DataIngestion:
             print(f'Data saved to {file_path}')
             logging.info("Data saved to %s", file_path)  # Log this information
         except Exception as e:
-            mlflow.log_exception(e)
+            # Log the exception message and stack trace as parameters
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             logging.error("Exception while saving data to CSV: %s", str(e))  # Log the error
-            raise e
+            raise CustomException(e)
 
     def initiate_data_ingestion(self):
         print('Data Ingestion start')
@@ -95,10 +110,15 @@ class DataIngestion:
             )
 
         except Exception as e:
-            mlflow.log_exception(e)
+            # Log the exception message and stack trace as parameters
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             logging.error("Exception occurred at data ingestion stage: %s", str(e))  # Log the error
             print('Exception occurred at data ingestion stage')
-            raise e
+            raise CustomException(e)
 
 if __name__ == '__main__':
     with mlflow.start_run():

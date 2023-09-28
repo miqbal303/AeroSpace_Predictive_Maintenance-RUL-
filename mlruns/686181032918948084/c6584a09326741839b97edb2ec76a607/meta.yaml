@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/686181032918948084/c6584a09326741839b97edb2ec76a607/artifacts
+end_time: 1695919399628
+entry_point_name: ''
+experiment_id: '686181032918948084'
+lifecycle_stage: active
+run_id: c6584a09326741839b97edb2ec76a607
+run_name: luminous-steed-381
+run_uuid: c6584a09326741839b97edb2ec76a607
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695919399526
+status: 3
+tags: []
+user_id: miqba

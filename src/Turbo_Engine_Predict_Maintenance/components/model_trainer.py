@@ -3,6 +3,7 @@ import sys
 import numpy as np
 from dataclasses import dataclass
 import mlflow
+import traceback
 from mlflow import log_params, log_metrics, log_artifact
 from src.Turbo_Engine_Predict_Maintenance.logger import logging
 from src.Turbo_Engine_Predict_Maintenance.exception import CustomException
@@ -118,7 +119,11 @@ class ModelTrainer:
             return r2_square
 
         except Exception as e:
-            #mlflow.log_exception(e)
+            # Truncate the traceback message if it's too long
+            exception_message = str(e)
+            exception_stack_trace = traceback.format_exc()[:500]  # Truncate to 500 characters
+            mlflow.log_params({"exception_message": exception_message})
+            mlflow.log_params({"exception_stack_trace": exception_stack_trace})
             raise CustomException(e, sys)
         finally:
             mlflow.end_run()

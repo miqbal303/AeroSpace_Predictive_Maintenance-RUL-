@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/686181032918948084/e9dd104a5f7b4e988b06b0b0c53e0302/artifacts
+end_time: 1695921261130
+entry_point_name: ''
+experiment_id: '686181032918948084'
+lifecycle_stage: active
+run_id: e9dd104a5f7b4e988b06b0b0c53e0302
+run_name: gregarious-toad-824
+run_uuid: e9dd104a5f7b4e988b06b0b0c53e0302
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695921260999
+status: 3
+tags: []
+user_id: miqba

@@ -1,0 +1,6 @@
+artifact_location: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/505530846061484988
+creation_time: 1695917053947
+experiment_id: '505530846061484988'
+last_update_time: 1695917053947
+lifecycle_stage: active
+name: PredictionPipeline

@@ -1,0 +1,15 @@
+artifact_uri: file:///D:/End%20To%20End%20ML/End_To_End_Intership/Predict_Maintenance_Nasa_TubroEngine_withmlflow/mlruns/182043332397565800/e0402fbac264436c8465439508c4b12b/artifacts
+end_time: 1695916849153
+entry_point_name: ''
+experiment_id: '182043332397565800'
+lifecycle_stage: active
+run_id: e0402fbac264436c8465439508c4b12b
+run_name: mercurial-newt-253
+run_uuid: e0402fbac264436c8465439508c4b12b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1695915306818
+status: 3
+tags: []
+user_id: miqba
